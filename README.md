@@ -47,6 +47,13 @@ You can retrieve user's data using. Need access token to the request'header.
 GET http://localhost:8000/users/:id
 ```
 
+You can update user's data using. Need access token to the request'header.
+
+```
+PUT http://localhost:8000/users/:id
+with payload : { "email": "<new email>", "password": "<new password>" }
+```
+
 You should send this authorization with any request to the protected endpoints
 
 ```
