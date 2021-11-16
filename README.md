@@ -41,6 +41,11 @@ You should receive an access token with the following format
 }
 ```
 
+You can retrieve user's data using. Need access token to the request'header.
+
+```
+GET http://localhost:8000/users/:id
+```
 
 You should send this authorization with any request to the protected endpoints
 

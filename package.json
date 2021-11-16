@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "json-server --watch ./database.json",
-    "start-auth": "node server.js"
+    "start-auth": "node --inspect-brk server.js"
   },
   "author": "ME:)",
   "license": "ISC",

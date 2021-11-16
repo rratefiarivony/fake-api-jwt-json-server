@@ -1,1 +1,11 @@
 node_modules
+/.idea/.gitignore
+/.idea/checkstyle-idea.xml
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/encodings.xml
+/.idea/fake-api-jwt-json-server.iml
+/.idea/sonarlint/issuestore/index.pb
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/sbt.xml
+/.idea/vcs.xml

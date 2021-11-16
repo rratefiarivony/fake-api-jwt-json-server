@@ -73,6 +73,11 @@
     },
     {
       "id": 18
+    },
+    {
+      "email": "bruno@email.com",
+      "password": "bruno",
+      "id": 19
     }
   ],
   "locations": [
@@ -121,6 +126,12 @@
       "cost": 15,
       "quantity": 101,
       "productId": 3
+    }
+  ],
+  "planes" : [
+    {
+      "id" : 1,
+      "name": "boeing 747"
     }
   ]
 }
