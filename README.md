@@ -47,6 +47,12 @@ You can retrieve user's data using. Need access token to the request'header.
 GET http://localhost:8000/users/:id
 ```
 
+You can search user by email. Need access token to the request'header.
+
+```
+GET http://localhost:8000/users?email=:email
+```
+
 You can update user's data using. Need access token to the request'header.
 
 ```

@@ -152,6 +152,33 @@ server.get('/users/:id', (req, res) => {
 
 })
 
+//Search user by email
+server.get('/users', (req, res) => {
+  const email = req.query.email;
+  console.log("GET users endpoint called; user id :"+ email);
+
+  fs.readFile("./users.json", (err, data) => {
+    if (err) {
+      const status = 500
+      const message = err
+      res.status(status).json({status, message})
+      return
+    }
+
+    // Get current users data
+    var data = JSON.parse(data.toString());
+
+    //find the user by id
+    const user = data.users.find( u => u.email === email); //add some data
+
+    if (user) {
+      return res.status(200).json([user]);
+    }
+    return res.status(404).json({});
+  });
+
+})
+
 //PUT user
 server.put('/users/:id', (req, res) => {
   const id = parseInt(req.params.id);
